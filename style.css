@@ -1,1 +1,251 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("./images/bg-intro-desktop.png") top center repeat;
+  background-color: #ff7a7a;
+  color: white;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro {
+  width: 35%;
+  margin-right: 30px;
+}
+
+.intro .heading {
+  font-size: 3.5em;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.signup {
+  width: 35%;
+  margin-left: 30px;
+}
+
+.try-free {
+  width: 100%;
+  background-color: #6055a5;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+  padding: 10px 0 10px 0;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.43);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.43);
+}
+
+.try-free span {
+  font-weight: lighter;
+  opacity: .7;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.43);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.43);
+}
+
+.error {
+  display: none;
+}
+
+.show-error {
+  color: #ff7a7a;
+  text-align: right;
+  font-size: 11px;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+::-webkit-input-placeholder {
+  font-family: 'Poppins', sans-serif;
+  color: #b9b6d3;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+:-ms-input-placeholder {
+  font-family: 'Poppins', sans-serif;
+  color: #b9b6d3;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+::-ms-input-placeholder {
+  font-family: 'Poppins', sans-serif;
+  color: #b9b6d3;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+::placeholder {
+  font-family: 'Poppins', sans-serif;
+  color: #b9b6d3;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.show-icon {
+  background: url("./images/icon-error.svg") right 30px center no-repeat;
+  background-size: 20px;
+  border-color: #ff7a7a;
+}
+
+.field {
+  padding: 15px 30px 15px 30px;
+  border: solid #b9b6d3 1px;
+  border-radius: 5px;
+}
+
+.field:not(:first-child) {
+  margin-top: 20px;
+}
+
+.field:focus, .field:after {
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  color: #3e3c49;
+  font-weight: 600;
+  font-size: 16px;
+  border: solid #6055a5 1px;
+}
+
+.submit {
+  margin: 20px 0 5px 0;
+  color: white;
+  padding: 15px 0 15px 0;
+  text-align: center;
+  letter-spacing: 1.5px;
+  background-color: #38cc8c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0px 15px 0 #2ba16e9d inset;
+          box-shadow: 0 0px 15px 0 #2ba16e9d inset;
+}
+
+.submit:hover, .submit:focus {
+  opacity: 0.7;
+}
+
+.terms, .terms > span {
+  color: #b9b6d3;
+  font-size: 11px;
+  text-align: center;
+  font-style: normal;
+}
+
+.terms > span {
+  color: #ff7a7a;
+  font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+  body {
+    min-height: 100%;
+    background: url("./images/bg-intro-mobile.png") top center repeat;
+    background-color: #ff7a7a;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main {
+    height: auto;
+    max-width: 375px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    padding: 50px 0 50px 0;
+  }
+  .intro {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  .intro .heading {
+    font-size: 30px;
+  }
+  .signup {
+    width: 100%;
+    margin: 0;
+  }
+  .try-free {
+    padding: 20px 80px 20px 80px;
+    margin-top: 30px;
+  }
+  .form {
+    padding: 20px;
+  }
+  .field {
+    padding: 15px;
+  }
+  .terms {
+    padding: 3px 30px 0px 30px;
+  }
+  .terms span {
+    display: inline;
+  }
+}
+/*# sourceMappingURL=style.css.map */

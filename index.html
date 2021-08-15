@@ -7,10 +7,88 @@
     <meta property="og:title" content="Intro with signup form" />
     <meta property="og:description" content="Intro with signup form" />
     <meta property="og:image" content="images/desktop-preview.jpg" />
-    <meta property="og:url" content="" />
-    <link rel="stylesheet" href="./images/favicon-32x32.png" />
+    <meta
+      property="og:url"
+      content="https://thusmiley.github.io/intro-with-signup-form/"
+    />
+    <link rel="icon" href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="./style.css" />
     <title>Intro with signup form</title>
   </head>
-  <body></body>
+  <body>
+    <div class="main">
+      <div class="intro">
+        <h1 class="heading">Learn to code by watching others</h1>
+        <p class="description">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="signup">
+        <p class="try-free">
+          Try it free 7 days <span>then $20/mo thereafter</span>
+        </p>
+        <form name="form" action="#" class="form" method="POST">
+          <!-- First Name -->
+          <input
+            type="text"
+            name="first-name"
+            value=""
+            id="first-name"
+            placeholder="First Name"
+            class="field"
+            required
+          />
+          <span class="error">First Name cannot be empty</span>
+          <!-- Last Name -->
+          <input
+            type="text"
+            name="last-name"
+            value=""
+            id="last-name"
+            class="field"
+            placeholder="Last Name"
+            required
+          />
+          <span class="error">Last Name cannot be empty</span>
+          <!-- Email -->
+          <input
+            type="email"
+            name="email"
+            value=""
+            id="email"
+            class="field"
+            placeholder="Email Address"
+            required
+          />
+          <span class="error">Looks like this is not an email</span>
+          <!-- Password -->
+          <input
+            type="password"
+            name="password"
+            value=""
+            id="password"
+            class="field"
+            placeholder="Password"
+            required
+          />
+          <span class="error">Password cannot be empty</span>
+          <button
+            type="submit"
+            id="submit"
+            value="CLAIM YOUR FREE TRIAL"
+            class="submit"
+          >
+            CLAIM YOUR FREE TRIAL
+          </button>
+          <p class="terms">
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>

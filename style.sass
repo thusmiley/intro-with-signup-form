@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap')
+    
+$red: hsl(0, 100%, 74%) 
+$green: hsl(154, 59%, 51%)
+$blue: hsl(248, 32%, 49%)
+$dark-blue: hsl(249, 10%, 26%) 
+$grayish-blue: hsl(246, 25%, 77%)
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    font-family: 'Poppins', sans-serif
+    font-size: 16px
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    background: url("./images/bg-intro-desktop.png") top center repeat
+    background-color: $red
+    color: white
+
+.main
+    display: flex
+    flex-direction: row
+    width: 100vw
+    justify-content: center
+    align-items: center
+
+.intro
+    width: 35%
+    margin-right: 30px
+    & .heading
+        font-size: 3.5em
+        line-height: 1.2
+        margin-bottom: 30px
+
+.signup
+    width: 35%     
+    margin-left: 30px  
+
+.try-free
+    width: 100%
+    background-color: $blue    
+    border-radius: 5px
+    text-align: center
+    font-weight: 500
+    padding: 10px 0 10px 0
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.43)
+    & span
+        font-weight: lighter
+        opacity: .7
+
+.form
+    display: flex
+    flex-direction: column   
+    padding: 30px
+    margin-top: 20px
+    background-color: white
+    border-radius: 5px
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.43)
+
+.error
+    display: none
+
+.show-error
+    color: $red
+    text-align: right
+    font-size: 11px
+    font-style: italic
+    margin-top: 5px
+
+::placeholder
+    font-family: 'Poppins', sans-serif
+    color: $grayish-blue
+    font-weight: 500
+    font-size: 16px
+
+.show-icon
+    background: url("./images/icon-error.svg") right 30px center no-repeat
+    background-size: 20px
+    border-color: $red
+
+.field
+    padding: 15px 30px 15px 30px
+    border: solid $grayish-blue 1px
+    border-radius: 5px
+    &:not(:first-child)
+        margin-top: 20px
+    &:focus, &:after
+        background-color: white
+        font-family: 'Poppins', sans-serif
+        color: $dark-blue
+        font-weight: 600
+        font-size: 16px
+        border: solid $blue 1px
+
+.submit
+    margin: 20px 0 5px 0
+    color: white
+    padding: 15px 0 15px 0
+    text-align: center
+    letter-spacing: 1.5px
+    background-color: $green     
+    border: none
+    border-radius: 5px
+    cursor: pointer
+    box-shadow: 0 0px 15px 0 #2ba16e9d inset
+    &:hover, &:focus
+        opacity: 0.7    
+
+.terms, .terms > span
+    color: $grayish-blue
+    font-size: 11px
+    text-align: center
+    font-style: normal
+
+.terms > span
+    color: $red
+    font-weight: 600    
+
+@media (max-width: 1000px)
+    body
+        min-height: 100%
+        background: url("./images/bg-intro-mobile.png") top center repeat
+        background-color: $red
+        display: flex
+        align-items: center
+        justify-content: center
+
+    .main
+        height: auto
+        max-width: 375px
+        display: flex
+        flex-direction: column 
+        justify-content: center
+        align-items: center
+        margin: auto
+        padding: 50px 0 50px 0
+
+    .intro
+        width: 100%
+        margin: 0
+        padding: 20px
+        text-align: center
+        & .heading 
+            font-size: 30px
+
+    .signup
+        width: 100%   
+        margin: 0        
+
+    .try-free
+        padding: 20px 80px 20px 80px   
+        margin-top: 30px 
+
+    .form
+        padding: 20px
+
+    .field
+        padding: 15px         
+
+    .terms
+        padding: 3px 30px 0px 30px    
+        & span
+            display: inline
